@@ -24,6 +24,8 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            background-color: red;
+            color: white;
         }
         p{
             display: flex;
@@ -36,7 +38,13 @@
             justify-content: center;
             text-align: center;
         }
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
 
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
         #compact{
             text-transform: none;
             font-size: .7em;
@@ -114,7 +122,7 @@
 
 <div>
     <div><p>Días hasta el siguiente examen</p></div>
-    <div id="timer">
+    <div id="timer" class="blink_me">
         <div class="days">
             <div id="days" class="numbers">81</div>
             Días

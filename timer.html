@@ -24,8 +24,16 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            background-color: red;
+            color: white;
+        }
+        .blink_me {
+            animation: blinker 1s linear infinite;
         }
 
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
         #compact{
             text-transform: none;
             font-size: .7em;
@@ -101,7 +109,7 @@
 
 <body class="">
 <div>
-    <div id="timer">
+    <div id="timer" class="blink_me">
         <div class="days">
             <div id="days" class="numbers">81</div>
             Días

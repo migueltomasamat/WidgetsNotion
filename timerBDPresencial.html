@@ -24,6 +24,9 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+
+        }
+        .alert{
             background-color: red;
             color: white;
         }
@@ -122,7 +125,7 @@
 
 <div>
     <div><p>Días hasta el siguiente examen</p></div>
-    <div id="timer" class="blink_me">
+    <div id="timer" >
         <div class="days">
             <div id="days" class="numbers">81</div>
             Días
@@ -146,7 +149,7 @@
 <script>
 
     const year = new Date().getFullYear();
-    const myDate = new Date('2025-03-05T16:50:00.000Z');
+    const myDate = new Date('2025-06-04T16:50:00.000Z');
     const startDate = moment(myDate);
     const padLeft = (num) => {
         if (String(num).length > 2) {

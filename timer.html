@@ -24,6 +24,9 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+
+        }
+        .alert{
             background-color: red;
             color: white;
         }
@@ -109,7 +112,7 @@
 
 <body class="">
 <div>
-    <div id="timer" class="blink_me">
+    <div id="timer">
         <div class="days">
             <div id="days" class="numbers">81</div>
             Días
@@ -127,7 +130,7 @@
             Segundos
         </div>
     </div>
-    <h1 id="nw-ad" class="nw-poweredby">😱¡Uhhh que poco tiempo, hay que estudiar!</h1>
+    <h1 id="nw-ad" class="nw-poweredby">😙¡Cuánto tiempo hasta el siguiente examen! 🏖️ </h1>
 </div>
 
 <script>
@@ -138,7 +141,7 @@
     }
 
     const year = new Date().getFullYear();
-    const myDate = new Date('2025-03-04T14:00:00.000Z');
+    const myDate = new Date('2025-06-03T15:00:00.000Z');
     const startDate = moment(myDate);
     const padLeft = (num) => {
         if (String(num).length > 2) {
